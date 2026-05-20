@@ -505,20 +505,85 @@ footer {
 
 /* ══ RESPONSIVE ══ */
 @media(max-width:960px){
-  .hero{grid-template-columns:1fr;padding-top:7.5rem;gap:3rem}
-  .hero-right{height:360px}
-  .about-grid,.skills-grid,.contact-grid{grid-template-columns:1fr;gap:3.5rem}
+  .hero{grid-template-columns:1fr;padding-top:6rem;gap:2rem}
+  .hero-right{height:300px}
+  .about-grid,.skills-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
   .dcards{grid-template-columns:1fr 1fr}
   .stats{grid-template-columns:repeat(3,1fr)}
+  .sec{padding:5rem 6%}
 }
+
 @media(max-width:620px){
-  nav{padding:.9rem 5%}
-  .nav-links{gap:1.4rem}
-  .nav-links a{font-size:.62rem}
-  .sec,.hero{padding-left:5%;padding-right:5%}
-  .dcards{grid-template-columns:1fr}
-  .hero-name{font-size:3rem}
-  footer{flex-direction:column;align-items:flex-start}
+  /* Nav */
+  nav{padding:.8rem 4%}
+  .nav-links{gap:1.1rem}
+  .nav-links a{font-size:.6rem;letter-spacing:.05em}
+
+  /* Custom cursor off on touch */
+  #cur,#cur-r{display:none}
+  body{cursor:auto}
+
+  /* Hero */
+  .hero{
+    grid-template-columns:1fr;
+    padding:5.5rem 5% 2rem;
+    min-height:auto;
+    gap:0;
+  }
+  .hero-right{
+    height:220px;
+    margin-top:1rem;
+  }
+  .hero-name{font-size:clamp(2.6rem,11vw,3.2rem);line-height:.95}
+  .hero-role{font-size:1.1rem;margin-bottom:1.4rem}
+  .hero-desc{font-size:.97rem;margin-bottom:1.8rem;line-height:1.75}
+  .hero-badge{font-size:.65rem;padding:.32rem .75rem;margin-bottom:1.5rem}
+  .hero-btns{gap:.7rem;margin-bottom:2rem}
+  .btn-fill,.btn-stroke{padding:.75rem 1.4rem;font-size:.75rem}
+  .hero-socials{gap:.45rem}
+  .spill{font-size:.62rem;padding:.25rem .6rem}
+
+  /* Sections */
+  .sec{padding:4rem 5%}
+  .sec-h{font-size:clamp(1.85rem,7vw,2.6rem);margin-bottom:2.5rem}
+
+  /* About */
+  .about-grid{grid-template-columns:1fr;gap:2.5rem}
+  .about-body p{font-size:.97rem}
+  .stats{grid-template-columns:repeat(3,1fr);gap:.75rem}
+  .stat{padding:1.1rem .6rem}
+  .stat-n{font-size:1.7rem}
+  .stat-l{font-size:.68rem}
+  .terminal{font-size:.75rem}
+  .term-body{padding:1.1rem 1.1rem 1.5rem}
+
+  /* Skills */
+  .skills-grid{grid-template-columns:1fr;gap:3rem}
+  .dtags{gap:.45rem}
+  .dtag{font-size:.78rem;padding:.38rem .9rem}
+
+  /* Projects */
+  .proj-grid{grid-template-columns:1fr}
+  .pcard-body{padding:1.5rem}
+  .pcard h3{font-size:1.15rem}
+
+  /* Design cards */
+  .dcards{grid-template-columns:1fr;gap:1rem}
+  .dc{padding:1.6rem 1.4rem}
+  .design-lead{font-size:.97rem;margin-bottom:2.5rem}
+
+  /* Contact */
+  .contact-grid{grid-template-columns:1fr;gap:2.5rem}
+  .contact-lead{font-size:.97rem}
+  .cl-val{font-size:.88rem}
+  .avail-card{padding:1.8rem}
+  .avail-card h3{font-size:1.15rem}
+  .avail-card p{font-size:.88rem}
+
+  /* Footer */
+  footer{flex-direction:column;align-items:flex-start;gap:.85rem;padding:1.5rem 5%}
+  .flogo{font-size:.95rem}
+  .fcopy{font-size:.62rem}
 }
 </style>
 </head>
